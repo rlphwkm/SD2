@@ -6,4 +6,3 @@ Menu deadline - Thursday
 Content and assets - Friday
 
 Everything else hopefully by Friday - styling and tweaks over the weekend
-
