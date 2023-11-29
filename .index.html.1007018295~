@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+ <head>  
+	 <meta content="width=device-width,initial-scale=1" name="viewport"> <!-- This is to let the website take advantage of the size of the device being used and not look awkward -->
+
+	 <link href="./assets/favicon.ico" rel="icon"> <!-- This is the image of the website in the browser tab -->
+
+	 <script type="text/javascript" src="./script.js"></script> <!-- This is the link to the javascript file -->
+
+	<title>Culinary Concoctions</title>  
+
+	<link href="./style.css" rel="stylesheet">
+	 
+ </head> 
+
+
+  <body>
+    <h1>Home Page</h1>
+		<div class="sidebar">
+			<a href="/" class="button">Home</a>
+			<a href="/about" class="button">About</a>
+			<a href="/contact" class="button">Contact</a>
+			<a href="/menu" class="button">Menu</a>
+			<a href="/reservation" class="button">Reservation</a>
+		</div>
+
+		<
+
+    </body>
+
+  </html>
