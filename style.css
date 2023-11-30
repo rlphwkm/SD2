@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+font-family: 'Kaushan Script', cursive;
 }
 
 h1 {
@@ -17,25 +18,72 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 10%;
-  background-color: #b1dd8c;
+  background-color: #4d4d4d;
   padding: 20px;
   float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.button {
-  display: block;
-  padding: 20px 20px;
-  margin-bottom: 10px;
-  background-color: #77bb41;
+.sidebar h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar a.button {
+  background-image: radial-gradient(circle at center, white 50%, #4d4d4d 150%);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid #4d4d4d;
+  border-radius: 25% 25%;
+  color: #4d4d4d;
+  font-family: cursive;
+  font-weight: bold;
+  padding: 10%;
   text-decoration: none;
-  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.sidebar a.button:hover {
+  background-color: #ccc;
   cursor: pointer;
+}
+
+.sidebar a.button:active {
+  background-color: #ddd;
+}
+
+.sidebar h1 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 
 .content{
   float: right;
   width: 90%;
   margin: auto;
+}
+
+.content img {
+  height: 300px;
+  width: 100%;
+  float: right;
+  object-fit: cover; /* Maintain aspect ratio while resizing */
 }
