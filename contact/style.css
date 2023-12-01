@@ -94,6 +94,14 @@ body {
   font-size: 30px;
 }
 
+.content iframe {
+  display: relative;
+  align: center;
+  margin: auto;
+  width: 100%;
+  height: 1100px;
+}
+
 .content p {
   display: flex;
   text-align: center;

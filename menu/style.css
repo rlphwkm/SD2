@@ -9,6 +9,10 @@ body {
   font-family: 'Kaushan Script', cursive;
 }
 
+.dish{
+  display: none;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -101,4 +105,57 @@ body {
   margin-right: auto;
   width: 75%;
   font-size: 20px;
+}
+
+/* Additional styles for the new buttons and food sections */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b5a642;
+  padding: 10px;
+}
+
+.top-buttons button {
+  background-color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid #b5a642;
+  border-radius: 25% 25%;
+  color: #000000;
+  font-family: cursive;
+  font-weight: bold;
+  padding: 4%;
+  white-space: nowrap;
+  overflow: hidden
+  text-align: center;;
+}
+
+.top-buttons button:hover {
+  box-shadow: 0 40px 80px rgba(1, 1, 1, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+  background-color: #eee;
+  cursor: pointer;
+  
+}
+
+.dinner-section{
+  display: block;
+}
+
+.food-section.active{
+  display: block;
+}
+
+.menuDishes{
+  margin-left: 5%;
+  margin-right: 5%;
 }

@@ -2,16 +2,15 @@
 <html>
 
  <head>  
-	 <meta content="width=device-width,initial-scale=1" name="viewport"> <!-- This is to let the website take advantage of the size of the device being used and not look awkward -->
+	 <meta content="width=device-width,initial-scale=1" name="viewport">
 
 	 <link href="./assets/favicon.ico" rel="icon"> <!-- This is the image of the website in the browser tab -->
 
-	 <script type="text/javascript" src="./script.js"></script> <!-- This is the link to the javascript file -->
+	<!-- <script type="text/javascript" src="./script.js"></script> <!-- This is the link to the javascript file -->
 
 	<title>Culinary Concoctions</title>  
 
 	<link href="./style.css" rel="stylesheet">
-
  </head> 
 
 	<body>
@@ -29,9 +28,117 @@
 			<img href="backgroundpic" src="./assets/BackgroundPic.jpg"/>
 			<h1> Culinary Concoctions </h1>
 			<i> Menu </i>
-			<p> Content of the page </p>
-		</div>
 
+<!-- Here's what I (Adrianna) wrote, it isn't finished or styled but it should work -->
+
+      <div class="menuDishes">
+
+      <label for="choices">Select a Type</label>
+      <select id="choices">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+        <button id="menuButton">Show Menu</button>
+
+    <div class = "dish breakfast" id = "potato_pancakes">
+      <h2>Potato pancakes</h2>
+    </div>
+    <div class = "dish breakfast" id = "enkulal_firfir">
+      <h2>Enkulal Firfir</h2>
+    </div>
+    <div class = "dish breakfast" id = "manakish">
+      <h2>Manakish</h2>
+    </div>
+    <div class = "dish breakfast" id = "pineapple_bun">
+      <h2>Pineapple Bun</h2>
+    </div>
+
+    <div class = "dish lunch" id = "lunch_1">
+      <h2>Lunch Dish 1</h2>
+    </div>
+    <div class = "dish lunch" id = "lunch_2">
+      <h2>Lunch Dish 2</h2>
+    </div>
+    <div class = "dish lunch" id = "lunch_3">
+      <h2>Lunch Dish 3</h2>
+    </div>
+    <div class = "dish lunch" id = "lunch_4">
+      <h2>Lunch Dish 4</h2>
+    </div>
+
+
+    <div class = "dish dinner" id = "dinner_1">
+      <h2>Dinner Dish 1</h2>
+    </div>
+    <div class = "dish dinner" id = "dinner_2">
+      <h2>Dinner Dish 2</h2>
+    </div>
+    <div class = "dish dinner" id = "dinner_3">
+      <h2>Dinner Dish 3</h2>
+    </div>
+    <div class = "dish dinner" id = "dinner_4">
+      <h2>Dinner Dish 4</h2>
+    </div>
+
+    <div class = "dish dessert" id = "dessert_1">
+      <h2>Dessert Dish 1</h2>
+    </div>
+    <div class = "dish dessert" id = "dessert_2">
+      <h2>Dessert Dish 2</h2>
+    </div>
+    <div class = "dish dessert" id = "dessert_3">
+      <h2>Dessert Dish 3</h2>
+    </div>
+    <div class = "dish dessert" id = "dessert_4">
+      <h2>Dessert Dish 4</h2>
+    </div>
+  
+
+      </div>
+
+      </div>
+    
+<!-- Gelila's Menu Code 
+    
+    <div class="content">
+      <div class="top-buttons">
+        <button onclick="showFoodSection('breakfast')">Breakfast</button>
+        <button onclick="showFoodSection('lunch')">Lunch</button>
+        <button onclick="showFoodSection('dinner')">Dinner</button>
+        <button onclick="showFoodSection('dessert')">Dessert</button>
+      </div>
+
+
+      
+      <div class="food-section active" id="breakfast-section">
+        <h2>Breakfast Foods</h2>
+        <p>Enjoy our delicious breakfast options, including pancakes, eggs, and more!</p>
+        <!Add the Breckfast menu items and images here>
+
+      </div>
+
+      <div class="food-section" id="lunch-section">
+        <h2>Lunch Foods</h2
+        <p>Explore our lunch menu featuring sandwiches, salads, and other delightful dishes.</p>
+
+        <!Add the Lunch menu items and images here>
+
+      </div>
+
+      <div class="food-section" id="dinner-section">
+        <h2>Dinner Foods</h2>
+        <p>Savor the flavors of our dinner menu with a variety of entrees and sides.</p>
+
+      <!--Add the Dinner menu items and images here-      </div>
+      
+      <div class="food-section" id="dessert-section">
+        <h2>Dessert Foods</h2
+        <p>Indulge in our sweet treats and desserts that will satisfy your cravings.</p>
+      </div>
+        <!--Add the Dessert menu items and images here-->
+    <script src="script.js"></script>
 		</body>
 
 	</html>
