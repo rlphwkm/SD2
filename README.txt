@@ -8,4 +8,4 @@ Content and assets - Friday
 Everything else hopefully by Friday - styling and tweaks over the weekend
 
 
-Home, Reservation, About are all done
+Home, Reservation, About and Contact are all done
