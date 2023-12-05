@@ -1,18 +1,10 @@
-Template: https://replit.com/@rlphwkm/beta
-Bridge will be in the adjunct office 4:45 - ?? thursday
+Webpage: sd2.rlphwkm.repl.co
+Download the code: sd2.rlphwkm.repl.co/download (no buttons, please copy and paste link into browser)
 
-Menu deadline - Thursday
+Software Development 2 class (CMPT 220) at marist college.
+Culinary Concoctions website
 
-Content and assets - Friday
+The forms do work and they do send out answers to the developers.
+The website is hosted on replit, formally known as repl (replit.com)
 
-Everything else hopefully by Friday - styling and tweaks over the weekend
-
-
-Home, Reservation, About and Contact are all done
-
-Adrianna 12/3 6pm: 
-
-This: <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Kaushan+Script&display=swap" rel="stylesheet">
-needs to be put in the <head> of any page using the Kaushan Script or Hedvig Letters Serif fonts. Otherwise it becomes comic sans 😅
-
-I am working on styling especially the sidebar. On my screen for some reason it's too narrow and then the buttons overflow. I'm also changing the fonts and trying to make things look smoother. 
+The website was made by: Ralph Wakim, Adrianna Bordonaro, Gelila Getu, Mattia Muggeri.
