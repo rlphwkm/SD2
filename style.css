@@ -1,3 +1,13 @@
+/*CSS Variables, so that any font or color changes can be updated everywhere at once*/
+
+:root {
+  --gold: #d3af22;
+  --white: #ffffff;
+  --lightgray: #f0f0f0;
+  --titlefont: 'Forum', serif;
+  --bodyfont: 'Hedvig Letters Serif', serif;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -6,16 +16,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kaushan Script', cursive;
 }
 
 .sidebar {
+  background-color: var(--lightgray);
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 10%;
-  background-color: #b5a642;
+  width: 13%;
   padding: 0px;
   float: left;
   display: flex;
@@ -23,75 +32,74 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border-right: 2px solid var(--gold);
 }
 
-.sidebar h1 {
-  text-align: center;
-  color: white;
-  font-size: 30px;
+.sidebar img{
+  width: 100%;
+  height: auto;
   margin: auto;
 }
 
 .sidebar a.button {
-  background-image: radial-gradient(circle at center, white 50%, #b5a642 150%);
-  background-blend-mode: multiply;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
-  border: 1px solid #b5a642;
-  border-radius: 25% 25%;
+  background-color: var(--white);
   color: #000000;
-  font-family: cursive;
+  font-family: var(--bodyfont);
   font-weight: bold;
-  padding: 10%;
+  padding-top: 22%;
   white-space: nowrap;
   overflow: hidden;
-  width: 100px;
-  height: 90px;
+  width: 80%;
+  transition: transform .2s;
+  -webkit-transition: transform .2s;
+  height: 10%;
   text-align: center;
-  line-height: 90px;
   margin: auto;
   object-fit: cover;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
 }
 
 .sidebar a.button:hover {
-  background-color: #eee;
+  background-color: var(--gold);
   cursor: pointer;
+  transform: scale(1.15);
 }
 
-.sidebar a.button:active {
-  background-color: #ccc;
-}
-
-.content{
-  float: right;
-  width: 90%;
-  margin: auto;
-}
-
-.content h1 {
-  text-align: center;
-  font-size: 60px;
-  margin: auto;
-  background-color: #b5a642; /* Add a grey background */
-  width: 100%; /* Take over the entire width of the page */
-}
-
-.content img {
+#backgroundpic{
   height: 300px;
   width: 100%;
   float: right;
   object-fit: cover; /* Maintain aspect ratio while resizing */
 }
 
-.content i {
+
+.content{
+  float: right;
+  width: 87%;
+  margin: auto;
+  background-color: var(--lightgray);
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  background-color: var(--gold); 
+  width: 100%; /* Take over the entire width of the page */
+  line-height: 1.4;
+  font-family: var(--titlefont);
+}
+
+
+.content h2{
   display: block;
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   font-size: 30px;
+  font-family: var(--titlefont);
 }
 
 .content p {
@@ -101,4 +109,14 @@ body {
   margin-right: auto;
   width: 75%;
   font-size: 20px;
+  font-family: var(--bodyfont);
+}
+
+
+.abtimg{
+  width: 80%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
 }

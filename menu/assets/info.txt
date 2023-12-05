@@ -2,3 +2,5 @@ This folder is to upload all images and useful information used by the website.
 Link to it is:
 
 ./assets/FILENAME.FILETYPE
+
+Keep all file names as 1 word. eg: BackgroundPic

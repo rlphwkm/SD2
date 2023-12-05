@@ -23,19 +23,19 @@ function choose() {
     // match the selected value to a list and make those visible
     if(select.value == "Breakfast"){
       for (let i = 0; i < brFoods.length; i++) {
-        brFoods[i].style.display = "inline";
+        brFoods[i].style.display = "flex";
       }
     }else if(select.value == "Lunch"){
         for (let i = 0; i < lnFoods.length; i++) {
-          lnFoods[i].style.display = "inline";
+          lnFoods[i].style.display = "flex";
         }
     }else if(select.value == "Dinner"){
       for (let i = 0; i < diFoods.length; i++) {
-        diFoods[i].style.display = "inline";
+        diFoods[i].style.display = "flex";
       }
     }else if(select.value == "Dessert"){
         for (let i = 0; i < deFoods.length; i++) {
-          deFoods[i].style.display = "inline";
+          deFoods[i].style.display = "flex";
         }
     }else{
       console.log("Oops");
@@ -63,34 +63,3 @@ function displayNone(){
 }
 
 window.onload = displayNone();
-
-
-
-
-
-
-
-
-// the comments are mad chatGPT vibes xd - ralph <3
-/*// JavaScript code for showing/hiding food sections
-function showFoodSection(section) {
-  // Hide all food sections
-  document.querySelectorAll('.food-section').forEach(function (el) {
-    el.classList.remove('active');
-  });
-
-  // Show the selected food section
-  var selectedScetion = document.getElementById(section + '-section');
-  selectedSection.classList.add('active');
-
-  documnet.querySelectorALL('food-section p').forEach(function (el){
-    el.style.display = 'none';
-  });
-
-  //Show the text inside the <h2> element of the selceted section
-  var contentPragraph = selectedSection.querySelector('p');
-  if (contentPragraph) {
-    contentParagraph.style.display = 'block';
-  }
-}
-*/

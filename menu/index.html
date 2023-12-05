@@ -4,36 +4,37 @@
  <head>  
 	 <meta content="width=device-width,initial-scale=1" name="viewport">
 
-	 <link href="./assets/favicon.ico" rel="icon"> <!-- This is the image of the website in the browser tab -->
+    <link href="../assets/sitelogo.png" rel="icon"> <!-- This is the image of the website in the browser tab -->
 
 	<!-- <script type="text/javascript" src="./script.js"></script> <!-- This is the link to the javascript file -->
 
+   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
 	<title>Culinary Concoctions</title>  
 
 	<link href="./style.css" rel="stylesheet">
  </head> 
 
 	<body>
-		<div class="sidebar">
-			<h1>Culinary Concoctions</h1>
-			<a href="/" class="button">Home</a>
-			<a href="/menu" class="button">Menu</a>
-			<a href="/reservation" class="button">Reservation</a>
-			<a href="/about" class="button">About Us</a>
-			<a href="/contact" class="button">Contact</a>
-		</div>
+    <div class="sidebar">
+      <img src="../assets/sitelogo.png"/>
+      <a href="/" class="button">Home</a>
+      <a href="/menu" class="button">Menu</a>
+      <a href="/reservation" class="button">Reservation</a>
+      <a href="/about" class="button">About Us</a>
+      <a href="/contact" class="button">Contact</a>
+    </div>
 
-		<div class="content">
+    <div class="content">
 
-			<img href="backgroundpic" src="./assets/BackgroundPic.jpg"/>
-			<h1> Culinary Concoctions </h1>
-			<i> Menu </i>
+      <img id="backgroundpic" src="./assets/BackgroundPic.jpg"/>
+      <h1> CULINARY CONCOCTIONS </h1>
+      <br>
+      <h2>Menu</h2>
 
-<!-- Here's what I (Adrianna) wrote, it isn't finished or styled but it should work -->
+    <div class="menuDishes">
 
-      <div class="menuDishes">
-
-      <label for="choices">Select a Type</label>
+      <div id="selectMenu">
+      <label for="choices">Select a Type: </label>
       <select id="choices">
             <option value="Breakfast">Breakfast</option>
             <option value="Lunch">Lunch</option>
@@ -41,104 +42,102 @@
             <option value="Dessert">Dessert</option>
         </select>
         <button id="menuButton">Show Menu</button>
-
+      </div>
     <div class = "dish breakfast" id = "potato_pancakes">
-      <h2>Potato pancakes</h2>
+      <h2 class="dishtitle">Potato Pancakes</h2>
+      <img class = "dishimage" src = "./assets/Potato Pancakes.jpg">
+      <p class = "dishtext">Potato pancakes are a traditional Irish breakfast dish. It called "bacsta&iacute;" in Irish and has a few variations, but the most common is a flat cake similar to latkes. The pancakes contain finely shredded potato, flour, vegetables, and spices. </p>
     </div>
     <div class = "dish breakfast" id = "enkulal_firfir">
-      <h2>Enkulal Firfir</h2>
+      <h2 class="dishtitle">Chechebsa (Kita Fir Fir)</h2>
+      <img class = "dishimage" src = "./assets/ET-BF-1.png">
+      <p class = "dishtext">Featuring hand-torn flatbread bathed in golden niter kibbeh, adorned with vibrant toppings, and enriched with a sprinkle of fragrant berbere spice – a tantalizing journey through the flavors of Ethiopia on your plate.</p>
     </div>
     <div class = "dish breakfast" id = "manakish">
-      <h2>Manakish</h2>
+      <h2 class="dishtitle">Manakish</h2>
+      <img class = "dishimage" src = "./assets/LBB.png">
+      <p class = "dishtext">Manakish (also pronouned as Manaeesh) is a Lebanese pizza or flatbread made with a soft dough and topped with various toppings, the most common of which is Za'atar and cheese. It can be made into small circular rounds or larger ones depending on preference.</p>
     </div>
     <div class = "dish breakfast" id = "pineapple_bun">
-      <h2>Pineapple Bun</h2>
+      <h2 class="dishtitle">Pineapple Bun</h2>
+      <img class = "dishimage" src = "./assets/HK BREAKFAST.jpg">
+      <p class = "dishtext">A pineapple bun is a kind of sweet bun predominantly popular in Hong Kong and also common in Chinatowns worldwide. Despite the name, it does not traditionally contain pineapple; rather, the name refers to the look of the characteristic topping.</p>
     </div>
 
     <div class = "dish lunch" id = "lunch_1">
-      <h2>Lunch Dish 1</h2>
+      <h2 class="dishtitle">Kitfo</h2>
+      <img class = "dishimage" src = "./assets/ET-BF-3.png">
+      <p class = "dishtext">Showcasing finely minced prime beef blended with aromatic spices, served alongside clarified butter, homemade cheese, and freshly baked injera – an exquisite symphony of flavors that invites you to experience the authentic taste of Ethiopian gastronomy in every delectable bite.</p>
     </div>
     <div class = "dish lunch" id = "lunch_2">
-      <h2>Lunch Dish 2</h2>
+      <h2 class="dishtitle">Parsnip Soup</h2>
+      <br>
+      <img class = "dishimage" src = "./assets/parsnip_soup.jpg">
+      <p class = "dishtext">Parsnips are a staple root vegetable in Ireland and often incorporated into soup. Parsnip soup is typically blended and spiced with cumin and coriander. Brown bread is a widespread homemade loaf, which was popular during the Irish famine.</p>
     </div>
-    <div class = "dish lunch" id = "lunch_3">
-      <h2>Lunch Dish 3</h2>
+    <div class = "dish lunch" id = "char_siu_bao">
+      <h2 class="dishtitle">Char Siu Bao</h2>
+      <img class = "dishimage" src = "./assets/HK LUNCH.jpg">
+      <p class = "dishtext">Char siu bao is a Cantonese baozi filled with barbecue-flavored cha siu pork. They are served as a type of dim sum during yum cha and are sometimes sold in Chinese bakeries.</p>
     </div>
     <div class = "dish lunch" id = "lunch_4">
-      <h2>Lunch Dish 4</h2>
+      <h2 class="dishtitle">Shawarma</h2>
+      <img class = "dishimage" src = "./assets/LBL.png">
+      <p class = "dishtext">Shawarma (Arabic: شاورما) is a Middle Eastern dish that originated in the Levant region of the Arab world during the Ottoman Empire, consisting of meat cut into thin slices, stacked in an inverted cone, and roasted on a slowly turning vertical rotisserie or spit.</p>
     </div>
 
 
     <div class = "dish dinner" id = "dinner_1">
-      <h2>Dinner Dish 1</h2>
+      <h2 class="dishtitle">Vegan Beyayinetu</h2>
+      <img class = "dishimage" src = "./assets/ET-BF-2.png">
+      <p class = "dishtext">Embark on a plant-powered feast, a lavish canvas of injera adorned with an exquisite array of colorful and flavorful stews, featuring lentils, chickpeas, vibrant vegetables, and aromatic spices – a harmonious celebration of diverse tastes and textures that invites you to relish the vibrant essence of Ethiopian vegan cuisine.</p>
     </div>
     <div class = "dish dinner" id = "dinner_2">
-      <h2>Dinner Dish 2</h2>
+      <h2 class="dishtitle">Kibbeh</h2>
+      <img class = "dishimage" src = "./assets/LBD.png">
+      <p class = "dishtext">A Middle Eastern dish of ground lamb with bulgar wheat and seasonings, eaten cooked or raw.
+</p>
     </div>
     <div class = "dish dinner" id = "dinner_3">
-      <h2>Dinner Dish 3</h2>
+      <h2 class="dishtitle">Beef & Guinness Stew</h2>
+      <br>
+      <img class = "dishimage" src = "./assets/beefandguinness.jpg">
+      <p class = "dishtext">Irish stew, the national dish, varies regionally but typically contains meat and vegetables cooked slowly. A popular variant is Beef & Guinness, where a pint of Guinness is added to the gravy. The stew is served atop or alongside seasoned mashed potatoes.</p>
     </div>
-    <div class = "dish dinner" id = "dinner_4">
-      <h2>Dinner Dish 4</h2>
+    <div class = "dish dinner" id = "siu_mai">
+      <h2 class="dishtitle">Siu Mai</h2>
+      <img class = "dishimage" src = "./assets/HK DINNER.jpg">
+      <p class = "dishtext">Siu mai is a Cantonese dumpling with a pork filling wrapped in an extra thin wonton and steamed. The wrapper is not completely folded so the filling can be seen from above. There is often an orange topping, sometimes crab roe, sometimes grated carrot. </p>
     </div>
 
     <div class = "dish dessert" id = "dessert_1">
-      <h2>Dessert Dish 1</h2>
+      <h2 class="dishtitle">Baklava</h2>
+      <img class = "dishimage" src = "./assets/LBDD.png">
+      <p class = "dishtext">Lebanese Baklava (Baklawa) is the best of many Middle Eastern sweets. This Lebanese pastry is made with sheets of filo dough or pastry, layered with clarified butter or ghee, and filled with sugary walnuts and topped with a rose water syrup.</p>
     </div>
     <div class = "dish dessert" id = "dessert_2">
-      <h2>Dessert Dish 2</h2>
+      <h2 class="dishtitle">Mushebek</h2>
+      <img class = "dishimage" src = "./assets/ET-BF-5.png">
+      <p class = "dishtext">Indulge your sweet tooth with our delectable Sweet Mushebek, a heavenly treat of layered pastry filled with a luscious blend of spiced nuts, honey, and a touch of fragrant rose water – a sumptuous fusion of textures and flavors that promises a delightful finale to your Ethiopian culinary experience</p>
     </div>
-    <div class = "dish dessert" id = "dessert_3">
-      <h2>Dessert Dish 3</h2>
+    <div class = "dish dessert" id = "egg_tart">
+      <h2 class="dishtitle">Egg Tart</h2>
+      <img class = "dishimage" src = "./assets/HK DESSERT.jpg">
+      <p class = "dishtext">Egg tarts are a traditional Cantonese dessert made with a flaky pastry crust and a creamy egg custard filling. The flavor of the egg balances out the sweetness of the sugar, creating a balance between sweet and savory.</p>
     </div>
     <div class = "dish dessert" id = "dessert_4">
-      <h2>Dessert Dish 4</h2>
+      <h2 class="dishtitle">Apple Cake</h2>
+      <br>
+      <img class = "dishimage" src = "./assets/apple cake.jpg">
+      <p class = "dishtext">Apple cake is a popular "farmhouse style" Irish dessert. It is usually made with tart apples and a layer of cake and crumble, plus warm spices like cinnamon and nutmeg.</p>
     </div>
   
 
       </div>
 
-      </div>
-    
-<!-- Gelila's Menu Code 
-    
-    <div class="content">
-      <div class="top-buttons">
-        <button onclick="showFoodSection('breakfast')">Breakfast</button>
-        <button onclick="showFoodSection('lunch')">Lunch</button>
-        <button onclick="showFoodSection('dinner')">Dinner</button>
-        <button onclick="showFoodSection('dessert')">Dessert</button>
-      </div>
-
-
-      
-      <div class="food-section active" id="breakfast-section">
-        <h2>Breakfast Foods</h2>
-        <p>Enjoy our delicious breakfast options, including pancakes, eggs, and more!</p>
-        <!Add the Breckfast menu items and images here>
-
-      </div>
-
-      <div class="food-section" id="lunch-section">
-        <h2>Lunch Foods</h2
-        <p>Explore our lunch menu featuring sandwiches, salads, and other delightful dishes.</p>
-
-        <!Add the Lunch menu items and images here>
-
-      </div>
-
-      <div class="food-section" id="dinner-section">
-        <h2>Dinner Foods</h2>
-        <p>Savor the flavors of our dinner menu with a variety of entrees and sides.</p>
-
-      <!--Add the Dinner menu items and images here-      </div>
-      
-      <div class="food-section" id="dessert-section">
-        <h2>Dessert Foods</h2
-        <p>Indulge in our sweet treats and desserts that will satisfy your cravings.</p>
-      </div>
-        <!--Add the Dessert menu items and images here-->
+    </div>
+  
     <script src="script.js"></script>
-		</body>
+  </body>
 
-	</html>
+</html>

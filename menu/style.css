@@ -1,24 +1,196 @@
+/*CSS Variables, so that any font or color changes can be updated everywhere at once*/
+
+:root {
+  --gold: #d3af22;
+  --white: #ffffff;
+  --lightgray: #f0f0f0;
+  --titlefont: 'Forum', serif;
+  --bodyfont: 'Hedvig Letters Serif', serif;
+}
+
 html {
   height: 100%;
   width: 100%;
+  background-color: var(--lightgray);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kaushan Script', cursive;
 }
+
 
 .dish{
-  display: none;
+  display: flex;
+  display: -moz-flex;
+  font-size: 30px;
+  font-family: var(--bodyfont);
+  padding: 20px;
+  min-width: 0;
+  min-height: 0;
 }
 
+.dish img{
+  width: 20px;
+  height: 20px;
+  -moz-flex: 1;
+  flex: 1;
+  margin: 20px;
+  min-width: 1px;
+  min-height: 1px;
+}
+
+.dishtext{
+  -moz-flex: 1;
+  flex: 1;
+}
+
+.dishtitle{
+  -moz-flex: 1;
+  flex: 1;
+}
+
+.menuDishes{
+  width: 80%;
+  margin: auto;
+  min-width: 0;
+}
+
+#selectMenu{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  font-family: var(--bodyfont);
+}
+
+select{
+  width: 100px;
+}
+
+#menuButton{
+  font-family: inherit; 
+}
+
+
+.sidebar {
+  background-color: var(--lightgray);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 13%;
+  padding: 0px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-right: 2px solid var(--gold);
+}
+
+.sidebar img{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.sidebar a.button {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--white);
+  color: #000000;
+  font-family: var(--bodyfont);
+  font-weight: bold;
+  padding-top: 22%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  transition: transform .2s;
+  -webkit-transition: transform .2s;
+  height: 10%;
+  text-align: center;
+  margin: auto;
+  object-fit: cover;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+}
+
+.sidebar a.button:hover {
+  background-color: var(--gold);
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.content{
+  float: right;
+  width: 87%;
+  margin: auto;
+  background-color: var(--lightgray);
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  background-color: var(--gold); 
+  width: 100%; /* Take over the entire width of the page */
+  line-height: 1.4;
+  font-family: var(--titlefont);
+}
+
+#backgroundpic{
+  height: 300px;
+  width: 100%;
+  float: right;
+  object-fit: cover; /* Maintain aspect ratio while resizing */
+}
+
+.content h2{
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  font-family: var(--titlefont);
+  min-height: 0;
+  min-width: 0;
+}
+
+.content p {
+  text-align: center;
+  margin: auto;
+ 
+  font-size: 20px;
+  font-family: var(--bodyfont);
+  min-height: 0;
+  min-width: 0;
+}
+
+.abtimg{
+  width: 80%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+}
+
+.content img {
+  height: 300px;
+  width: 100%;
+  float: right;
+  object-fit: cover; 
+  min-height: 0;
+  min-width: 0;/* Maintain aspect ratio while resizing */
+}
+
+/*
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 10%;
+  width: 12%;
   background-color: #b5a642;
   padding: 0px;
   float: left;
@@ -27,6 +199,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-family: 'Hedvig Letters Serif', serif;
 }
 
 .sidebar h1 {
@@ -77,15 +250,15 @@ body {
   text-align: center;
   font-size: 60px;
   margin: auto;
-  background-color: #b5a642; /* Add a grey background */
-  width: 100%; /* Take over the entire width of the page */
+  background-color: #b5a642; /* Add a grey background 
+  width: 100%; /* Take over the entire width of the page 
 }
 
 .content img {
   height: 300px;
   width: 100%;
   float: right;
-  object-fit: cover; /* Maintain aspect ratio while resizing */
+  object-fit: cover; /* Maintain aspect ratio while resizing 
 }
 
 .content i {
@@ -106,56 +279,4 @@ body {
   width: 75%;
   font-size: 20px;
 }
-
-/* Additional styles for the new buttons and food sections */
-.top-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #b5a642;
-  padding: 10px;
-}
-
-.top-buttons button {
-  background-color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  background-blend-mode: multiply;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: white;
-  border: 1px solid #b5a642;
-  border-radius: 25% 25%;
-  color: #000000;
-  font-family: cursive;
-  font-weight: bold;
-  padding: 4%;
-  white-space: nowrap;
-  overflow: hidden
-  text-align: center;;
-}
-
-.top-buttons button:hover {
-  box-shadow: 0 40px 80px rgba(1, 1, 1, 0.1);
-  transform: translateY(-2px);
-  transition: all 0.3s ease-in-out;
-  background-color: #eee;
-  cursor: pointer;
-  
-}
-
-.dinner-section{
-  display: block;
-}
-
-.food-section.active{
-  display: block;
-}
-
-.menuDishes{
-  margin-left: 5%;
-  margin-right: 5%;
-}
+*/
